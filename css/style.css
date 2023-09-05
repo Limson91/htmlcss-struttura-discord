@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12 ) * 4);
+}
+
+.col-12 {
+    flex-basis: 100%; /*colonna 12/12*/
+}
+
+.col-10 {
+    flex-basis: calc((100% / 12) * 10); /*dimensione orizzontale container rosa*/
+}
+
+.debug main .col-8 {
+    background-color: #1E90FF;
+}
+
+.debug main .col-4 {
+    background-color: #FFC0CB;
+}
+
+.col-2 {
+    flex-basis: calc((100% / 12 ) * 2);
+}
+
+.debug .page-header {
+    background-color: #ADD8E6;
+    padding: 10px; /*padding azzurro*/
+}
+
+.debug .page-header .col {
+    background-color: #DAA520;
+    border: 1px dashed black;
+    padding: 5px; /*padding arancione*/
+}
+
+.debug .info {
+    background-color: #00008B;
+}
+
+.debug main section {
+    padding: 20px; /*padding sfondo blu*/
+    }
+
+.debug .info [class^='col'] {
+    background-color: #EE82EE;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.debug main [class^='col'] {
+    min-height: 200px; /*altezza minima container rosa*/
+    padding: 20;
+    border: 1px dashed black;
+}
+
+.debug .green-box .col-12 {
+    background-color: #228B22;
+    min-height: 400px;
+}
+
+.debug .page-footer {
+    background-color: #23272A;
+    padding: 10px;
+}
+
+.debug footer [class^='col'] {
+    min-height: 200px; /*altezza minima footer*/
+    padding: 20;
+    border: 1px dashed black;
+}
+
+.debug .page-footer .col-4 {
+    background-color: #F08080;
+    min-height: 400px;
+}
+
+.debug .page-footer .col-2 {
+    background-color: #20B2AA;
+    min-height: 400px;
+}
+
+.debug .page-footer .col {
+    background-color: #FFB6C1;
+    min-height: 50px;
+}
+
+.debug .page-footer .row {
+    background-color: #7FFFD4;
+    min-height: 50px;
+    margin: 5px;
+}
